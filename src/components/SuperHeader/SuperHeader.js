@@ -26,10 +26,16 @@ const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display:flex;
+  justify-content:flex-end;
+  height:40px;
+  align-items:center;
+  padding: 0px 32px 0px 32px;
 `;
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+  margin-right:auto;
 `;
 
 const HelpLink = styled.a`
