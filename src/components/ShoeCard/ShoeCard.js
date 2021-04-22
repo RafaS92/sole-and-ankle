@@ -44,6 +44,7 @@ const ShoeCard = ({
         </Row>
         <Row>
           <ColorInfo>{pluralize('Color', numOfColors)}</ColorInfo>
+          <SalePrice>{salePrice}</SalePrice>
         </Row>
       </Wrapper>
     </Link>
@@ -55,16 +56,22 @@ const Link = styled.a`
   color: inherit;
 `;
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article`
+`;
 
 const ImageWrapper = styled.div`
   position: relative;
+
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+width:100%`;
 
 const Row = styled.div`
   font-size: 1rem;
+  font-weight:600;
+  display:flex;
+  justify-content:space-between;
 `;
 
 const Name = styled.h3`
